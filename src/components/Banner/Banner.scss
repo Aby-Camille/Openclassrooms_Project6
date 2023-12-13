@@ -1,0 +1,28 @@
+@import '../../style/mainStyle.scss';
+
+.banner {
+    display: flex;
+    position: relative;
+    border-radius: 25px;
+    margin: 3rem 3rem;
+    font-size: 48px;
+    background: black;
+}
+
+.banner img {
+    border-radius: 25px;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.bannerTitle {
+    display: flex;
+	justify-content: center;
+	margin: 5rem 2rem;
+	width: 100%;
+	color: $white;
+	z-index: 1;
+}
