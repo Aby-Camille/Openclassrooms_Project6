@@ -1,3 +1,5 @@
+@import '../../style/mainStyle.scss';
+
 .header {
 	align-items: center;
     display: flex;
@@ -6,12 +8,16 @@
 }
 
 .navBar {
+	color: $color-primary;
+}
+
+nav ul {
 	display: flex;
 	align-items: center;
-	gap: 2rem;
 	font-family: Montserrat;
 	font-size: 24px;
 	font-style: normal;
+	gap: 3rem;
 }
 
 .navLink {
