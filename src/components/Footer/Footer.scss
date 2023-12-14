@@ -1,0 +1,20 @@
+@import '../../style/mainStyle.scss';
+
+.footer {
+    display: flex;
+    background: black;
+    color: $white;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.footer-logo {
+    margin-top: 66px;
+}
+
+.footer-note {
+    font-size: 1rem;
+		margin-bottom: 29px;
+}
