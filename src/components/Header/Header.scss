@@ -1,14 +1,13 @@
-@import '../../style/mainStyle.scss';
-
 .header {
 	align-items: center;
     display: flex;
 	margin: 0 3rem;
+    padding-top: 40px;
 	justify-content: space-between;
 }
 
 .navBar {
-	color: $color-primary;
+	color: var(--color-primary);
 }
 
 nav ul {

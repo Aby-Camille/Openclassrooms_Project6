@@ -1,9 +1,7 @@
-@import '../../style/mainStyle.scss';
-
 .footer {
     display: flex;
     background: black;
-    color: $white;
+    color: var(--white);
     gap: 20px;
     align-items: center;
     width: 100%;
@@ -16,5 +14,5 @@
 
 .footer-note {
     font-size: 1rem;
-		margin-bottom: 29px;
+    margin-bottom: 29px;
 }

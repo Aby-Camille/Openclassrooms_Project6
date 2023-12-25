@@ -11,7 +11,7 @@ function Header (){
                 <a href="/" className='navLink'>Accueil</a>
             </li>
             <li>
-                <a href="/" className='navLink'>A Propos</a>
+                <a href="/about" className='navLink'>A Propos</a>
             </li>
         </ul>
         </nav>

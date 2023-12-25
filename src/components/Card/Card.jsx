@@ -1,7 +1,10 @@
 import React from "react";
 import './Card.scss';
 
-function Card () {
-    return <div className="card"></div>
+function Card ({title, location}) {
+    return <div class="card">
+        {title}
+        {location}
+    </div>
 }
 export default Card;
