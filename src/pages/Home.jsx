@@ -16,8 +16,9 @@ function Home (){
     
     return <div>
         <Banner title='Chez vous, partout et ailleurs' homeImg={BannerHomeimg}/>
-        <div class="grid">
-            <Card title="alex"/>
+        <div className="grid">
+            <Card title=""/>
+            <Card/>
             <Card/>
             <Card/>
             <Card/>

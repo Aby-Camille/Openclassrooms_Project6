@@ -1,5 +1,10 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
+    gap: 50px;
+
+    border-radius: 25px;
+    background-color: var(--grey-light-bg);
+    padding: 56px 50px;
+    margin: 100px 50px;
 }
