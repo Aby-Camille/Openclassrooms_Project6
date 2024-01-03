@@ -8,7 +8,7 @@ import BannerHomeimg from '../images/imgBanner_home.webp'
 
 import './Home.scss';
 
-function Home (){
+function Home () {
 
     useEffect (() => {
         document.title = 'Kasa - Accueil'

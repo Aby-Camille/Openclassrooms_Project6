@@ -1,8 +1,7 @@
 .card {
     background-color: var(--color-primary);
     height: 340px;
-    width: 340px;
-
+    aspect-ratio: 1 / 1;
     border-radius: 10px;
     color: var(--white);
     background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
