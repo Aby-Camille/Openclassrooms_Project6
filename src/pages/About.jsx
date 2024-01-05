@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import Banner from '../components/Banner/Banner';
 import BannerAbout from '../images/imgBanner_about.webp';
 import Collapse from './../components/Collapse/Collapse';
+import about from '../data/about.json';
+import './About.scss';
 
 function About () {
 
@@ -12,7 +14,18 @@ function About () {
     
     return <div>
         <Banner homeImg={BannerAbout}/>
-        <Collapse>collapse</Collapse>
+        <div className='collapse_container'>
+        {about.map(({ index, title, content }) =>
+				(
+					<div key={`${title}`}>
+						<Collapse
+							title={title}
+							content={content}
+						/>
+					</div>
+				)
+				)}
+        </div>
         </div>;
 }
 
