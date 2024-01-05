@@ -17,7 +17,9 @@ function Home () {
         <div className="grid">
             {
                 logements.map((logement) => {
-                    return <Card key={logement.id} logement={logement}/>;
+                    return <Card key={logement.id} logement={logement}
+                    title={logement.title} cover={logement.cover}
+                    />;
                 })
             }
         </div>
