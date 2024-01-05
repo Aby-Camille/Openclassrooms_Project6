@@ -5,7 +5,7 @@ import starInactive from '../../images/star-inactive.svg';
 
 
 function Rating () {
-    return <div>
+    return <div className="rating">
         <img src={starActive} alt="star"/>
         <img src={starInactive} alt="star"/>
     </div>
