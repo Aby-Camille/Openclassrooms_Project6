@@ -19,6 +19,10 @@ nav ul {
 	gap: 3rem;
 }
 
-.navLink {
+.active-link {
+	text-decoration: underline;
+}
+
+.navLinkUnderline {
 	text-decoration: underline;
 }

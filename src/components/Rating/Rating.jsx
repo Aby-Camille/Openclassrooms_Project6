@@ -4,10 +4,17 @@ import starActive from '../../images/star-active.svg';
 import starInactive from '../../images/star-inactive.svg';
 
 
-function Rating () {
+function Rating ({ rating }) {
+    const stars = 5 - rating;
+
     return <div className="rating">
-        <img src={starActive} alt="star"/>
-        <img src={starInactive} alt="star"/>
+        {
+            [...Array(parseInt(rating))].map(() => <img src={starActive} alt="star"/>)
+        }
+
+        {
+            [...Array(stars)].map(() => <img src={starInactive} alt="star"/>)
+        }
     </div>
 }
 
