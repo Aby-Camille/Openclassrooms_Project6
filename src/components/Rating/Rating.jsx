@@ -5,16 +5,15 @@ import starInactive from '../../images/star-inactive.svg';
 
 
 function Rating ({ rating }) {
-    const stars = 5 - rating;
 
     return <div className="rating">
-        {
-            [...Array(parseInt(rating))].map(() => <img src={starActive} alt="star"/>)
-        }
-
-        {
-            [...Array(stars)].map(() => <img src={starInactive} alt="star"/>)
-        }
+       {[...Array(5)].map((_, i) => (
+        <img
+          key={i}
+          src={i < rating ? starActive : starInactive}
+          alt="star"
+        />
+      ))}
     </div>
 }
 

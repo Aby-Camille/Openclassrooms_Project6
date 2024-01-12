@@ -9,7 +9,7 @@
 		justify-content: space-between;
 		margin-top: 10px;
 		padding: 10px 20px 10px 15px;
-		border-radius: 5px;
+		border-radius: 10px;
 		width: 100%;
         background-color: var(--color-primary);
         color: var(--white);
@@ -51,5 +51,20 @@
 
     &.active>.collapse_title img {
 		transform: rotate(-180deg);
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.collapse_title {
+		font-size: 13px;
+	}
+
+	.collapse_icon {
+		width: 16px;
+		height: 16px;
+	}
+
+	.collapse_content {
+		font-size: 13px;
 	}
 }
