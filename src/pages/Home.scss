@@ -14,6 +14,7 @@
 	.grid {
 		gap: 25px;
 		padding: 25px;
+        grid-template-columns: repeat(2, 1fr);
 	}
 }
 
@@ -22,5 +23,6 @@
 		margin: auto;
 		padding: 20px;
 		background: var(--white);
+        grid-template-columns: repeat(1, 1fr);
 	}
 }
