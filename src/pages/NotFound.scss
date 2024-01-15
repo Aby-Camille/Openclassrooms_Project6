@@ -26,3 +26,41 @@
     }
 
 }
+
+
+@media screen and (max-width: 900px) {
+	.notFound {
+		&_title {
+			font-size: 144px;
+		}
+
+		&_info {
+			font-size: 24px;
+			text-align: center;
+
+		}
+
+		&_link {
+			font-size: 16px;
+		}
+	}
+
+	@media screen and (max-width: 550px) {
+		.notFound {
+
+			&_title {
+				font-size: 96px;
+			}
+
+			&_info {
+				font-size: 18px;
+				text-align: center;
+
+			}
+
+			&_link {
+				font-size: 12px;
+			}
+		}
+	}
+}
