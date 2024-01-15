@@ -14,10 +14,10 @@ function Collapse ({title, content}) {
   return <div className={`collapse ${active && 'active'}`}>
             <div className='collapse_title'>
             {title}
-              <img className='collapse_icon' 
+              <img className='collapse_icon'
                 onClick={handleToggle}
-                src= {collapseArrow} 
-                alt='collapse arrow' 
+                src= {collapseArrow}
+                alt='collapse arrow'
               />
               </div>
               <div className="collapse_content">{content}</div>

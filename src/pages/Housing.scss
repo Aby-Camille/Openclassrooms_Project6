@@ -1,33 +1,28 @@
-.carousel-container {
-	position: relative;
-	height: 415px;
-	margin: 1rem 3rem;
+.carousel {
+	margin-top: 40px;
 }
 
 .details {
-	margin: 1rem 2rem;
 	display: flex;
   	justify-content: space-between;
+	align-items: baseline;
+	margin-top: 30px;
 
-&_infos1 {
+	&_infos1 {
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
 
-   &_title {
+		&_title {
 			color: var(--color-primary);
-			font-family: Montserrat;
 			font-size: 36px;
-			font-style: normal;
 			font-weight: 500;
 			line-height: 142.6%;
 		}
 
 		&_location {
 			color: var(--color-primary);
-			font-family: Montserrat;
 			font-size: 18px;
-			font-style: normal;
 			font-weight: 500;
 			line-height: 142.6%;
 		}
@@ -37,9 +32,10 @@
 			align-items: center;
 			justify-content: flex-start;
 			gap: 10px;
+			margin-top: 20px;
 			flex-wrap: wrap;
 
-		& .tag-style {
+			& .tag-style {
 				display: flex;
 				background: var(--color-primary);
 				color: var(--white);
@@ -54,47 +50,72 @@
 		}
 	}
 
-      &_infos2 {
+	&_infos2 {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		&_host {
 			display: flex;
-			flex-direction: column;
-			gap: 1rem;
-	
-			&_host {
+			align-items: center;
+			justify-content: flex-end;
+			gap: 10px;
+
+			&_name {
 				display: flex;
-				align-items: center;
-				justify-content: flex-end;
-				gap: 10px;
-	
-				&_name {
-					display: flex;
-					flex-direction: column;
-					color: var(--color-primary);
-					text-align: right;
-					font-family: Montserrat;
-					font-size: 18px;
-					font-style: normal;
-					font-weight: 500;
-				}
-	
-				&_picture {
-					width: 65px;
-					height: 65px;
-					border-radius: 50%;
-				}
+				flex-direction: column;
+				color: var(--color-primary);
+				text-align: right;
+				font-size: 18px;
+				font-weight: 500;
+			}
+
+			&_picture {
+				width: 65px;
+				height: 65px;
+				border-radius: 50%;
 			}
 		}
 	}
-
+}
 
 .rating {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 .logement_collapse {
-    display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 4.75rem;
-	margin: 1rem 3rem;
+	display: flex;
+	justify-content: space-between;
+	gap: 76px;
+	margin-top: 24px;
+	margin-bottom: 40px;
 }
+
+.collapse {
+	flex: 1;
+}
+
+@media screen and (max-width: 900px) {
+	.details {
+		display: flex;
+		flex-direction: column;
+		margin: 1rem;
+	}
+
+	.details_infos2 {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		gap: 5rem;
+		margin: 1rem 1rem;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.details_infos1_title {
+	  font-size: 24px;
+	}
+  }
+

@@ -1,16 +1,14 @@
 .header {
 	align-items: center;
     display: flex;
-	margin: 0 3rem;
-    padding-top: 40px;
 	justify-content: space-between;
 }
 
-.navBar {
+.nav-bar {
 	color: var(--color-primary);
 }
 
-nav ul {
+ul {
 	display: flex;
 	align-items: center;
 	font-family: Montserrat;
@@ -25,4 +23,27 @@ nav ul {
 
 .navLinkUnderline {
 	text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+
+.nav-bar > ul {
+			font-size: 1rem;
+			gap: 1rem;
+}
+
+.logo {
+			height: 45px;
+}
+}
+
+@media screen and (max-width:550px) {
+	.header {
+		margin: 0 1rem;
+
+		& .nav-bar {
+			margin: 1.5rem 0;
+		}
+	}
+
 }

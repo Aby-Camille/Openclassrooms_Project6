@@ -15,17 +15,16 @@ function About () {
     return <div>
         <Banner homeImg={BannerAbout}/>
         <div className='collapse_container'>
-        {about.map(({ index, title, content }) =>
-				(
-					<div key={`${title}`}>
-						<Collapse
-							title={title}
-							content={content}
-						/>
-					</div>
-				)
-				)}
-        </div>
+          {about.map(({ index, title, content }) =>
+          (
+            <Collapse
+              key={`${title}`}
+              title={title}
+              content={content}
+            />
+          )
+          )}
+          </div>
         </div>;
 }
 

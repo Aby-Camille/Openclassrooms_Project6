@@ -33,21 +33,23 @@
     }
 }
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1430px) {
 	.card {
-		width: 47%;
+		grid-template-columns: repeat(2, 1fr);
 
 	}
 }
 
 @media screen and (max-width: 900px) {
 	.card {
-		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
+		
 	}
 }
 
 @media screen and (max-width: 550px) {
 	.card {
 		height: 255px;
+		grid-template-columns: repeat(1, 1fr);
 	}
 }

@@ -16,13 +16,10 @@ function Housing () {
     }, [])
 
     const slides = logement.pictures
-
     const hostName = logement?.host?.name?.split(' ');
     
     return <div>
-        <div className='carousel-container'>
-            <Carousel slides={slides} title={logement.title}/>
-        </div>
+        <Carousel slides={slides} title={logement.title}/>
         <div className='details'>
             <div className='details_info1'>
             <h2 className='details_infos1_title'>{logement.title}</h2>
@@ -30,16 +27,15 @@ function Housing () {
             <div className='details_infos1_tags'>{logement.tags.map((tag, index) => (<div className='tag-style' key={index}>{tag}</div>))}</div>
             </div>
         <div className="details_infos2">
-
-					<div className='details_infos2_host'>
-						<div className='details_infos2_host_name'>
-							<span>{hostName[0]}</span>
-							<span>{hostName[1]}</span>
-						</div>
-                        <img src={logement.host.picture} alt={logement.host.name} className='details_infos2_host_picture' />
-                        </div>
-                        <Rating rating={logement.rating}/>
-                    </div>
+            <div className='details_infos2_host'>
+                <div className='details_infos2_host_name'>
+                    <span>{hostName[0]}</span>
+                    <span>{hostName[1]}</span>
+                </div>
+                <img src={logement.host.picture} alt={logement.host.name} className='details_infos2_host_picture' />
+                </div>
+                <Rating rating={logement.rating}/>
+            </div>
         </div>
         <div className='logement_collapse'>
             <Collapse title={'Description'} content={logement.description}/>

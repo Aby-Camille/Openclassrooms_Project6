@@ -6,8 +6,8 @@ import { NavLink } from 'react-router-dom';
 function Header () {
 
     return <div className='header'>
-        <img src={logo} alt="logo"/>
-        <nav className='navBar'>
+        <img src={logo} className= 'logo' alt="logo"/>
+        <nav className='nav-bar'>
         <ul>
             <li>
                 <NavLink to="/" className={({isActive}) => (isActive ? 'active-link': '')} >Accueil</NavLink>

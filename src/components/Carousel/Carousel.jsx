@@ -4,9 +4,7 @@ import { useState } from "react";
 import nextBtn from '../../images/right-btn.svg';
 import prevBtn from'../../images/left-btn.svg';
 
-
 function Carousel ({ slides, title }) {
-
     const [currentIndex, setCurrentIndex] = useState(0);
 	const [fading, setFading] = useState(false);
 
@@ -23,7 +21,7 @@ function Carousel ({ slides, title }) {
 	}
 
     function goToNext() {
-		setFading(true); 
+		setFading(true);
 		setTimeout(() => {
 			if (currentIndex === slides.length - 1) {
 				setCurrentIndex(0);
@@ -35,27 +33,25 @@ function Carousel ({ slides, title }) {
 	}
 
     return <div className="carousel">
-                {
-				slides.length === 0 ? ( 
-					<h2 className="carousel_no-photo-msg">Pas de photo disponible ..</h2>
-				) : slides.length === 1 ? ( 
-					<img src={slides[currentIndex]} className='carousel_slides' alt={title} />
-				) : (
-					<div>
-						<img className='carousel_nav-btn prev-btn' src={prevBtn} alt='précédente' onClick={goToPrevious} />
+        {
+            slides.length === 0 && <h2 className="no-photo-msg">Pas de photo disponible ...</h2>
+        }
 
-						<img src={slides[currentIndex]} className={`carousel_slides ${fading ? 'fading-out' : ''}`} alt={title} />
+        {
+            slides.length > 0 && <img src={slides[currentIndex]} className={`slides ${fading ? 'fading-out' : ''}`} alt={title} />
+        }
 
-						<img className='carousel_nav-btn next-btn' src={nextBtn} alt='suivante' onClick={goToNext} />
-
-						<div className="carousel_slide-number">
-							{currentIndex + 1} / {slides.length}
-						</div>
-					</div>
-				)
-			}
+        {
+            slides.length > 1 &&
+            <div>
+                <img className='nav-btn prev-btn' src={prevBtn} alt='précédente' onClick={goToPrevious} />
+                <img className='nav-btn next-btn' src={nextBtn} alt='suivante' onClick={goToNext} />
+                <div className='slide-number'>
+                    {currentIndex + 1} / {slides.length}
+                </div>
+            </div>
+        }
     </div>
-
 }
 
 export default Carousel;
