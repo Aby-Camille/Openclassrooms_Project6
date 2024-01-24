@@ -1,9 +1,9 @@
 import React from 'react';
 import { useEffect } from 'react';
-import Banner from '../components/Banner/Banner';
-import BannerAbout from '../images/imgBanner_about.webp';
-import Collapse from './../components/Collapse/Collapse';
-import about from '../data/about.json';
+import Banner from '../../components/Banner/Banner';
+import BannerAbout from '../../images/imgBanner_about.webp';
+import Collapse from '../../components/Collapse/Collapse';
+import about from '../../data/about.json';
 import './About.scss';
 
 function About () {

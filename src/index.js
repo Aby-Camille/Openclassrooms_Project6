@@ -7,10 +7,10 @@ import './style/main.scss';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Housing from './pages/Housing';
-import NotFound from './pages/NotFound';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Housing from './pages/Housing/Housing';
+import NotFound from './pages/NotFound/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

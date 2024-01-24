@@ -108,7 +108,8 @@
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-between;
-		gap: 20rem;
+		margin-top: 24px;
+		width: 100%;
 	}
 
 
@@ -146,6 +147,6 @@
 
   .details_infos2 {
 	margin-top: 24px;
-	gap: 13.5rem;
+	width: 100%;
 }
 }

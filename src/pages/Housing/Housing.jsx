@@ -1,10 +1,10 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useParams } from "react-router-dom";
-import Collapse from './../components/Collapse/Collapse';
-import Carousel from './../components/Carousel/Carousel';
-import Rating from './../components/Rating/Rating';
-import logements from './../data/logements.json';
+import Collapse from '../../components/Collapse/Collapse';
+import Carousel from '../../components/Carousel/Carousel';
+import Rating from '../../components/Rating/Rating';
+import logements from '../../data/logements.json';
 import './Housing.scss';
 
 function Housing () {

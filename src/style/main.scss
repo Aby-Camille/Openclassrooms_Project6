@@ -36,5 +36,6 @@ h1, h2, h3, p {
 @media screen and (max-width: 900px) {
     .page {
         padding: 0 19.5px;
+        min-height: 100vh;
     }
 }

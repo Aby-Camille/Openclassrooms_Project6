@@ -1,9 +1,9 @@
 import React from 'react';
 import { useEffect } from 'react';
-import Banner from '../components/Banner/Banner';
-import Card from '../components/Card/Card';
-import BannerHomeimg from '../images/imgBanner_home.webp';
-import logements from '../data/logements.json';
+import Banner from '../../components/Banner/Banner';
+import Card from '../../components/Card/Card';
+import BannerHomeimg from '../../images/imgBanner_home.webp';
+import logements from '../../data/logements.json';
 import './Home.scss';
 
 function Home () {
