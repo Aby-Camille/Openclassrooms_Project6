@@ -24,12 +24,14 @@ ul {
 @media screen and (max-width: 900px) {
 
 .nav-bar > ul {
-			font-size: 1rem;
+			font-size: 14px;
 			gap: 1rem;
+			padding: 0;
 }
 
 .logo {
 			height: 45px;
+			padding-right: 5px;
 }
 }
 

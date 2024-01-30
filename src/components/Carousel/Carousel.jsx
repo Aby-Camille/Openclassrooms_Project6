@@ -34,10 +34,6 @@ function Carousel ({ slides, title }) {
 
     return <div className="carousel">
         {
-            slides.length === 0 && <h2 className="no-photo-msg">Pas de photo disponible ...</h2>
-        }
-
-        {
             slides.length > 0 && <img src={slides[currentIndex]} className={`slides ${fading ? 'fading-out' : ''}`} alt={title} />
         }
 
