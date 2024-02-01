@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Collapse from '../../components/Collapse/Collapse';
 import Carousel from '../../components/Carousel/Carousel';
 import Rating from '../../components/Rating/Rating';
@@ -11,9 +12,19 @@ function Housing () {
     const { id } = useParams();
     const logement = logements.find((item) => item.id === id);
 
-    useEffect (() => {
+    const navigate = useNavigate();
+
+	useEffect(() => {
+
         document.title = 'Kasa - Logement';
-    }, [])
+
+        if (!logement) {
+            navigate("*");
+        }
+    }, [navigate, logement]);
+    if (!logement) {
+        return null;
+    };
 
     const slides = logement.pictures
     const hostName = logement?.host?.name?.split(' ');
